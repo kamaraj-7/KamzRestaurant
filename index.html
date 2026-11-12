@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8f5e9">
+<title>KamzBitesRestaurant | Authentic South Indian Flavours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--leaf:#236b45;--leaf-dark:#174c32;--leaf-soft:#e8f1e8;--cream:#fbf8ed;--paper:#fffdf7;--turmeric:#e9a928;--terracotta:#bd593b;--ink:#24352a;--muted:#68766b;--line:#e7e4d7;--shadow:0 16px 45px rgba(35,75,48,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button,input{font:inherit}
+header{position:sticky;top:0;z-index:50;background:rgba(255,253,247,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{max-width:1240px;margin:auto;min-height:82px;padding:10px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--leaf-dark);font-size:21px;letter-spacing:-.6px}.brand-mark{width:45px;height:45px;border-radius:15px;background:var(--leaf);color:white;display:grid;place-items:center;font-size:25px;box-shadow:0 7px 16px #236b4530}
+.nav-links{display:flex;align-items:center;gap:30px}.nav-links a{font-size:14px;font-weight:700;color:#4b5a4e;transition:.2s}.nav-links a:hover{color:var(--terracotta)}.nav-button,.primary-button{background:var(--leaf);color:#fff;border:0;border-radius:999px;padding:13px 23px;font-weight:800;display:inline-flex;align-items:center;gap:9px;cursor:pointer;transition:.25s;box-shadow:0 8px 18px #236b4525}.nav-button:hover,.primary-button:hover{background:var(--leaf-dark);transform:translateY(-2px)}
+.hero{position:relative;overflow:hidden;background:linear-gradient(115deg,#f7f2df 0%,#f7f2df 52%,#e8efdc 100%);min-height:610px;display:flex;align-items:center}.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;pointer-events:none}.hero:before{width:440px;height:440px;right:-70px;top:-160px;background:#e8a92820}.hero:after{width:300px;height:300px;right:16%;bottom:-210px;background:#236b4512}
+.hero-inner{width:min(1180px,100%);margin:auto;padding:80px 30px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;position:relative;z-index:1}.eyebrow{color:var(--terracotta);font-size:12px;letter-spacing:2.5px;font-weight:800;text-transform:uppercase;display:inline-flex;align-items:center;gap:9px}.eyebrow:before{content:"";width:26px;height:2px;background:var(--turmeric)}
+h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.15}h1{font-size:clamp(44px,6vw,76px);margin:20px 0;color:var(--leaf-dark);letter-spacing:-1.8px}.hero p{font-size:18px;color:#5c6a5d;max-width:510px;margin:0 0 30px}.hero-actions{display:flex;flex-wrap:wrap;gap:13px}.secondary-button{border:1.5px solid #aab9a8;color:var(--leaf-dark);border-radius:999px;padding:12px 22px;font-weight:800;transition:.2s}.secondary-button:hover{background:#fff}
+.hero-art{min-height:420px;position:relative;display:grid;place-items:center}.banana-plate{width:min(390px,78vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#f8f0d5 0 48%,#d7e3c9 49% 53%,#fffdf3 54% 60%,#d9c9a2 61% 64%,#fff 65%);box-shadow:0 25px 50px #315b3725;display:grid;place-items:center;transform:rotate(-8deg);animation:plateFloat 5s ease-in-out infinite}.meal-emoji{font-size:clamp(120px,18vw,190px);filter:drop-shadow(0 12px 8px #69451b30);transform:rotate(8deg)}.photo-plate{overflow:hidden;border:10px solid #fffdf3}.photo-plate img{width:100%;height:100%;object-fit:cover;border-radius:50%;transform:rotate(8deg) scale(1.12)}.float-food{position:absolute;font-size:42px;filter:drop-shadow(0 6px 6px #493b2020);animation:float 4s ease-in-out infinite}.float-food.one{top:12%;left:7%}.float-food.two{right:2%;top:25%;animation-delay:-1s}.float-food.three{bottom:7%;left:12%;animation-delay:-2s}.float-food.four{right:9%;bottom:10%;animation-delay:-.5s}
+@keyframes plateFloat{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-13px) rotate(-5deg)}}@keyframes float{0%,100%{transform:translateY(0) rotate(-7deg)}50%{transform:translateY(-17px) rotate(8deg)}}
+section.content-section{padding:88px 25px}.section-wrap{max-width:1180px;margin:auto}.section-heading{text-align:center;max-width:720px;margin:0 auto 42px}.section-heading h2{font-size:clamp(32px,4vw,48px);color:var(--leaf-dark);margin:12px 0}.section-heading p{color:var(--muted);margin:0}.intro{background:var(--paper)}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.intro-art{min-height:330px;border-radius:28px;background:linear-gradient(145deg,#e4eddb,#f7e9c6);display:grid;place-items:center;position:relative;overflow:hidden}.intro-art span{font-size:130px;animation:float 5s ease-in-out infinite}.intro-art:after{content:"";position:absolute;width:190px;height:190px;border:1px dashed #8ba487;border-radius:50%}.intro-copy h2{font-size:clamp(32px,4vw,45px);color:var(--leaf-dark);margin:12px 0 18px}.intro-copy p{color:var(--muted)}
+.features{background:var(--leaf-dark);color:white;padding:35px 25px}.feature-grid{max-width:1120px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.feature{text-align:center;padding:15px}.feature-icon{font-size:34px;display:block;margin-bottom:8px}.feature h3{font-size:21px;margin:8px 0}.feature p{color:#d4e2d5;font-size:14px;margin:0}
+.menu-section{background:var(--cream)}.menu-category{margin:48px 0 0}.category-heading{text-align:center;margin-bottom:28px}.category-heading h3{font-size:30px;color:var(--leaf-dark);margin:8px}.category-heading p{color:var(--muted);margin:0}.dish-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.dish-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 8px 25px #315b3709;transition:transform .28s,box-shadow .28s}.dish-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}.dish-visual{height:220px;display:block;background:#eaf0df;position:relative;overflow:hidden}.dish-visual:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 65%,rgba(20,45,29,.12));z-index:1;pointer-events:none}.dish-visual img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .55s ease}.dish-card:hover .dish-visual img{transform:scale(1.07)}.dish-body{padding:19px 21px 21px}.dish-body h4{font-family:"Playfair Display",serif;color:var(--leaf-dark);font-size:20px;margin:0 0 7px}.dish-body p{color:var(--muted);font-size:13px;min-height:42px;margin:0 0 12px}.price{font-weight:800;color:var(--terracotta);font-size:18px}.dish-tag{float:right;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--leaf);background:var(--leaf-soft);padding:5px 9px;border-radius:30px;font-weight:800}
+.specials{background:#edf2e7}.special-banner{border-radius:28px;padding:52px;background:linear-gradient(110deg,#194d33ed,#236b45df),radial-gradient(circle at 80% 30%,#e9a928 0,transparent 35%);color:white;display:grid;grid-template-columns:1fr auto;align-items:center;gap:25px;overflow:hidden}.special-banner h2{font-size:clamp(30px,4vw,44px);margin:10px 0;color:white}.special-banner p{color:#e2eddf;max-width:600px}.special-banner .eyebrow{color:#ffd77e}.special-banner .eyebrow:before{background:#ffd77e}.special-emoji{font-size:105px;animation:float 4s ease-in-out infinite}.offer-grid{margin-top:30px}
+.contact-section{background:var(--paper)}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:start}.contact-copy h2{font-size:40px;color:var(--leaf-dark);margin:12px 0}.contact-copy p{color:var(--muted)}.contact-point{display:flex;gap:12px;align-items:center;margin:18px 0;color:#4d5e50}.contact-point span{font-size:23px}.reservation-card{background:var(--cream);padding:30px;border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}.reservation-card h3{font-size:27px;color:var(--leaf-dark);margin:0 0 20px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:800;color:#4b5a4e}.field input{width:100%;padding:13px 14px;border:1px solid #d9dfd2;border-radius:11px;background:#fffdf8;outline:none}.field input:focus{border-color:var(--leaf);box-shadow:0 0 0 3px #236b4518}.submit-btn{margin-top:19px;width:100%;justify-content:center}
+footer{background:#143f2b;color:#f5f5e9;padding:45px 25px 20px}.footer-grid{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}.footer-brandline{font-size:22px;font-weight:800}.footer-section h3{font-size:19px;color:#f3c76a;margin:0 0 12px}.footer-section a,.footer-section p{display:block;color:#d1dfd2;font-size:13px;margin:6px 0}.footer-bottom{max-width:1180px;margin:30px auto 0;border-top:1px solid #ffffff25;padding-top:17px;text-align:center;color:#c5d4c7;font-size:12px}
+.popup-overlay{position:fixed;inset:0;background:#10251bd9;display:none;align-items:center;justify-content:center;padding:20px;z-index:100}.popup-overlay.active{display:flex}.popup{max-width:450px;width:100%;background:#fffdf7;border-radius:22px;padding:35px;text-align:center;position:relative;box-shadow:0 25px 70px #0004;animation:pop .25s ease}.popup .success-icon{font-size:55px}.popup h3{font-size:27px;color:var(--leaf-dark)}.popup p{color:var(--muted)}.popup-close-x{position:absolute;right:17px;top:12px;border:0;background:none;font-size:25px;cursor:pointer;color:var(--muted)}@keyframes pop{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:850px){.hero-inner{grid-template-columns:1fr;text-align:center;padding-top:65px}.hero p{margin-left:auto;margin-right:auto}.hero-actions{justify-content:center}.hero-art{min-height:340px}.intro-grid,.contact-grid{grid-template-columns:1fr}.dish-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}.special-banner{grid-template-columns:1fr;text-align:center}.special-emoji{display:none}}
+@media(max-width:600px){nav{padding:10px 16px;flex-wrap:wrap}.brand{font-size:18px}.brand-mark{width:39px;height:39px}.nav-links{order:3;width:100%;justify-content:space-between;gap:10px;padding:5px 0 8px}.nav-links a{font-size:12px}.nav-button{padding:10px 14px;font-size:12px}.hero{min-height:auto}.hero-inner{padding:55px 20px 35px}.hero-art{min-height:280px}.banana-plate{width:260px}.float-food{font-size:30px}.content-section{padding:65px 18px!important}.dish-grid{grid-template-columns:1fr}.dish-visual{height:205px}.feature-grid{grid-template-columns:1fr;gap:8px}.intro-art{min-height:250px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.reservation-card{padding:22px}.footer-grid{grid-template-columns:1fr 1fr;gap:24px}.special-banner{padding:32px 23px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<a class="brand" href="#home"><span class="brand-mark">🍃</span><span>KamzBitesRestaurant</span></a>
+<div class="nav-links"><a href="#home">Home</a><a href="#menu">Menu</a><a href="#specials">Specials</a><a href="#contact">Contact</a></div>
+<a class="nav-button" href="#contact">Book a Table <span>↗</span></a>
+</nav>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="hero-inner">
+<div class="hero-copy">
+<span class="eyebrow">Authentic South Indian flavours</span>
+<h1>Tradition served<br>with a little love.</h1>
+<p>Celebrate the comfort of South Indian food — crisp dosas, fluffy idlis, aromatic biryani and freshly brewed filter coffee, made with care.</p>
+<div class="hero-actions"><a href="#menu" class="primary-button">Explore Our Menu <span>→</span></a><a href="#contact" class="secondary-button">Reserve a Table</a></div>
+</div>
+<div class="hero-art" aria-label="South Indian meal illustration"><span class="float-food one">🌶️</span><span class="float-food two">🥥</span><span class="float-food three">🌿</span><span class="float-food four">🍌</span><div class="banana-plate photo-plate"><img src="https://images.unsplash.com/photo-1666251214695-405f673b396a?auto=format&fit=crop&w=1000&q=85" alt="South Indian meal served fresh" loading="eager"></div></div>
+</div>
+</section>
+<section class="content-section intro">
+<div class="section-wrap intro-grid reveal">
+<div class="intro-art"><span>🍽️</span></div>
+<div class="intro-copy"><span class="eyebrow">Welcome to KamzBitesRestaurant</span><h2>A place where South Indian food brings people together.</h2><p>From a leisurely breakfast to a satisfying lunch or a memorable dinner, enjoy familiar flavours inspired by South Indian kitchens. We celebrate fresh ingredients, traditional recipes and warm hospitality in every serving.</p><p>Gather with family and friends, discover your favourites and make every meal a happy moment.</p><a href="#menu" class="primary-button">Discover our menu <span>→</span></a></div>
+</div>
+</section>
+<section class="features"><div class="feature-grid">
+<div class="feature"><span class="feature-icon">🌿</span><h3>Fresh Ingredients</h3><p>Quality ingredients, fragrant spices and fresh chutneys in every meal.</p></div>
+<div class="feature"><span class="feature-icon">♨️</span><h3>Made With Care</h3><p>Traditional favourites prepared fresh and served hot.</p></div>
+<div class="feature"><span class="feature-icon">❤️</span><h3>A Place To Gather</h3><p>A welcoming space for family, friends and memorable moments.</p></div>
+</div></section>
+<section class="content-section menu-section" id="menu">
+<div class="section-wrap">
+<div class="section-heading reveal"><span class="eyebrow">Fresh from our kitchen</span><h2>Explore Our Menu</h2><p>From breakfast favourites to hearty meals and traditional sweets, find something you'll love.</p></div>
+<div class="menu-category">
+<div class="category-heading"><span class="eyebrow">South Indian favourites</span><h3>Breakfast & Tiffin</h3><p>Freshly prepared classics to start your day right.</p></div>
+<div class="dish-grid">
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1743615467204-8fdaa85ff2db?auto=format&fit=crop&w=1000&q=85" alt="Golden South Indian dosa served with chutneys" loading="lazy" decoding="async"></div><div class="dish-body"><span class="dish-tag">Popular</span><h4>Masala Dosa</h4><p>Crispy golden dosa filled with spiced potato masala, served with sambar and chutneys.</p><span class="price">₹90</span></div></article>
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1741376509047-66dae5df90f9?auto=format&fit=crop&w=1000&q=85" alt="Soft South Indian idli with chutneys and sambar" loading="lazy" decoding="async"></div><div class="dish-body"><h4>Idli Sambar</h4><p>Soft, fluffy steamed idlis paired with homestyle sambar and coconut chutney.</p><span class="price">₹60</span></div></article>
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1730191843435-073792ba22bc?auto=format&fit=crop&w=1000&q=85" alt="Crispy South Indian medu vada" loading="lazy" decoding="async"></div><div class="dish-body"><h4>Medu Vada</h4><p>Crispy outside, soft inside savoury lentil doughnuts with sambar and chutney.</p><span class="price">₹65</span></div></article>
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1743615467204-8fdaa85ff2db?auto=format&fit=crop&w=1000&q=85" alt="Golden South Indian dosa served with chutneys" loading="lazy" decoding="async"></div><div class="dish-body"><h4>Ghee Roast Dosa</h4><p>Paper-thin dosa roasted with aromatic ghee and served with classic accompaniments.</p><span class="price">₹110</span></div></article>
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1625398407796-82650a8c135f?auto=format&fit=crop&w=1000&q=85" alt="Traditional South Indian meal" loading="lazy" decoding="async"></div><div class="dish-body"><h4>Pongal</h4><p>Comforting rice and moong dal pongal finished with pepper, cumin and cashews.</p><span class="price">₹75</span></div></article>
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1741376509047-66dae5df90f9?auto=format&fit=crop&w=1000&q=85" alt="Soft South Indian idli with chutneys and sambar" loading="lazy" decoding="async"></div><div class="dish-body"><h4>Ven Pongal & Vadai</h4><p>Warm ghee pongal served with a crisp vadai, sambar and coconut chutney.</p><span class="price">₹95</span></div></article>
+</div>
+</div>
+<div class="menu-category">
+<div class="category-heading"><span class="eyebrow">Hearty & satisfying</span><h3>Meals & Rice Specials</h3><p>Full of flavour, served with the goodness of South Indian cooking.</p></div>
+<div class="dish-grid">
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1625398407796-82650a8c135f?auto=format&fit=crop&w=1000&q=85" alt="Traditional South Indian meal" loading="lazy" decoding="async"></div><div class="dish-body"><span class="dish-tag">Signature</span><h4>South Indian Meals</h4><p>A traditional banana-leaf style spread with rice, sambar, rasam, poriyal and more.</p><span class="price">₹150</span></div></article>
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=1000&q=85" alt="Indian chicken biryani" loading="lazy" decoding="async"></div><div class="dish-body"><h4>Chettinad Chicken Biryani</h4><p>Fragrant seeraga samba rice layered with bold Chettinad spices and tender chicken.</p><span class="price">₹190</span></div></article>
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=1000&q=85" alt="Indian chicken biryani" loading="lazy" decoding="async"></div><div class="dish-body"><h4>Vegetable Biryani</h4><p>Aromatic rice cooked with seasonal vegetables, herbs and freshly ground spices.</p><span class="price">₹140</span></div></article>
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1743615467204-8fdaa85ff2db?auto=format&fit=crop&w=1000&q=85" alt="Golden South Indian dosa served with chutneys" loading="lazy" decoding="async"></div><div class="dish-body"><h4>Uttapam</h4><p>Soft, thick rice-lentil pancake topped with onion, tomato, green chilli and coriander.</p><span class="price">₹85</span></div></article>
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1666251214695-405f673b396a?auto=format&fit=crop&w=1000&q=85" alt="South Indian food spread" loading="lazy" decoding="async"></div><div class="dish-body"><h4>Lemon Rice</h4><p>Light and zesty rice tempered with mustard seeds, curry leaves, peanuts and lemon.</p><span class="price">₹90</span></div></article>
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1741376509047-66dae5df90f9?auto=format&fit=crop&w=1000&q=85" alt="Soft South Indian idli with chutneys and sambar" loading="lazy" decoding="async"></div><div class="dish-body"><h4>Curd Rice</h4><p>Cooling creamy rice finished with a South Indian mustard and curry-leaf tempering.</p><span class="price">₹80</span></div></article>
+</div>
+</div>
+<div class="menu-category">
+<div class="category-heading"><span class="eyebrow">A sweet finish</span><h3>Desserts & Drinks</h3><p>Traditional treats and refreshing South Indian favourites.</p></div>
+<div class="dish-grid">
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1789993494855-1f89bb27fecb?auto=format&fit=crop&w=1000&q=85" alt="South Indian thali with appam and curries" loading="lazy" decoding="async"></div><div class="dish-body"><h4>Payasam</h4><p>Traditional creamy vermicelli payasam delicately flavoured with cardamom and nuts.</p><span class="price">₹65</span></div></article>
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1666251214695-405f673b396a?auto=format&fit=crop&w=1000&q=85" alt="South Indian food spread" loading="lazy" decoding="async"></div><div class="dish-body"><h4>Mysore Pak</h4><p>Rich traditional sweet made with ghee, gram flour and sugar.</p><span class="price">₹55</span></div></article>
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1666251214695-405f673b396a?auto=format&fit=crop&w=1000&q=85" alt="South Indian food spread" loading="lazy" decoding="async"></div><div class="dish-body"><h4>South Indian Filter Coffee</h4><p>Freshly brewed strong coffee blended with hot milk and a frothy finish.</p><span class="price">₹35</span></div></article>
+</div>
+</div>
+</div>
+</section>
+<section class="content-section specials" id="specials">
+<div class="section-wrap">
+<div class="special-banner reveal"><div><span class="eyebrow">Something delicious awaits</span><h2>Our South Indian Specials</h2><p>Discover signature flavours from our kitchen — from a traditional banana-leaf meal to our aromatic Chettinad biryani. Freshly prepared and full of character.</p><a href="#contact" class="primary-button">Book a Table <span>→</span></a></div><div class="special-emoji">🍛</div></div>
+<div class="dish-grid offer-grid">
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1625398407796-82650a8c135f?auto=format&fit=crop&w=1000&q=85" alt="Traditional South Indian meal" loading="lazy" decoding="async"></div><div class="dish-body"><span class="dish-tag">Chef's pick</span><h4>Traditional Banana Leaf Meals</h4><p>A generous traditional meal with rice, sambar, rasam, kootu, poriyal and appalam.</p><span class="price">₹150</span></div></article>
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=1000&q=85" alt="Indian chicken biryani" loading="lazy" decoding="async"></div><div class="dish-body"><span class="dish-tag">House special</span><h4>Chettinad Chicken Biryani</h4><p>Seeraga samba rice and tender chicken infused with freshly ground Chettinad masala.</p><span class="price">₹190</span></div></article>
+<article class="dish-card reveal"><div class="dish-visual"><img src="https://images.unsplash.com/photo-1730191843435-073792ba22bc?auto=format&fit=crop&w=1000&q=85" alt="Crispy South Indian medu vada" loading="lazy" decoding="async"></div><div class="dish-body"><span class="dish-tag">Favourite</span><h4>Ghee Podi Idli</h4><p>Mini idlis tossed in aromatic podi and ghee, served with sambar and chutney.</p><span class="price">₹85</span></div></article>
+</div>
+</div>
+</section>
+<section class="content-section contact-section" id="contact">
+<div class="section-wrap contact-grid">
+<div class="contact-copy reveal"><span class="eyebrow">We'd love to welcome you</span><h2>Make your reservation.</h2><p>Planning a family meal or catching up with friends? Reserve your table and enjoy warm South Indian hospitality.</p>
+<div class="contact-point"><span>📍</span><div><strong>Visit us</strong><br>KamzBitesRestaurant</div></div>
+<div class="contact-point"><span>✉️</span><div><strong>Email</strong><br>hello@kamzbitesrestaurant.com</div></div>
+<div class="contact-point"><span>📞</span><div><strong>Opening hours</strong><br>Monday – Sunday · 7:00 – 22:00</div></div>
+</div>
+<form id="reservationForm" class="reservation-card reveal">
+<h3>Reserve your table</h3>
+<div class="form-grid">
+<div class="field"><label for="Name">Your name</label><input type="text" id="Name" name="Name" placeholder="Enter your name" required></div>
+<div class="field"><label for="Email">Email address</label><input type="email" id="Email" name="Email" placeholder="you@example.com" required></div>
+<div class="field"><label for="Date">Date & time</label><input type="datetime-local" id="Date" name="Date" required></div>
+<div class="field"><label for="Guests">Number of guests</label><input type="number" id="Guests" name="Guests" min="1" step="1" placeholder="2" required></div>
+</div>
+<button type="submit" class="primary-button submit-btn">Submit Reservation <span>→</span></button>
+</form>
+</div>
+</section>
+</main>
+<footer><div class="footer-grid">
+<div class="footer-section"><div class="footer-brandline">🍃 KamzBitesRestaurant</div><p>Authentic South Indian flavours, served with warmth.</p></div>
+<div class="footer-section"><h3>Explore</h3><a href="#home">Home</a><a href="#menu">Our Menu</a><a href="#specials">Specials</a><a href="#contact">Contact</a></div>
+<div class="footer-section"><h3>Get In Touch</h3><p>hello@kamzbitesrestaurant.com</p><p>Contact details can be updated here.</p></div>
+<div class="footer-section"><h3>Opening Hours</h3><p>Monday – Sunday</p><p>7:00 – 22:00</p></div>
+</div><div class="footer-bottom">© 2026 KamzBitesRestaurant. All Rights Reserved. Food photographs via Unsplash.</div></footer>
+<div class="popup-overlay" id="popupOverlay" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+<div class="popup"><button class="popup-close-x" id="popupX" aria-label="Close">×</button><div class="success-icon">🎉</div><h3 id="popupTitle">Reservation received!</h3><p id="confirmationMessage">Thank you! We look forward to welcoming you.</p><button class="primary-button" id="popupClose">Done</button></div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+ const form=document.getElementById("reservationForm"),overlay=document.getElementById("popupOverlay"),confirmation=document.getElementById("confirmationMessage");
+ const close=()=>overlay.classList.remove("active");
+ form.addEventListener("submit",e=>{
+  e.preventDefault();
+  const name=document.getElementById("Name").value.trim(),date=document.getElementById("Date").value,guests=Number(document.getElementById("Guests").value);
+  if(!Number.isInteger(guests)||guests<1){alert("Please enter a valid number of guests.");return;}
+  if(new Date(date)<new Date()){alert("Please choose a future date and time.");return;}
+  confirmation.textContent=`Thank you, ${name}! Your reservation request for ${guests} guest(s) on ${new Date(date).toLocaleString()} has been received. We look forward to welcoming you at KamzBitesRestaurant.`;
+  overlay.classList.add("active");form.reset();
+ });
+ document.getElementById("popupX").addEventListener("click",close);
+ document.getElementById("popupClose").addEventListener("click",close);
+ overlay.addEventListener("click",e=>{if(e.target===overlay)close();});
+ document.addEventListener("keydown",e=>{if(e.key==="Escape")close();});
+ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}}),{threshold:.12});
+ document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+});
+</script>
+</body>
+</html>
